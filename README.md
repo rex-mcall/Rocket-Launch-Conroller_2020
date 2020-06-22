@@ -7,7 +7,7 @@
   - Launchpad selector dial
   - Digital pad readout
 - Bluetooth control
-  - Companion cellphone app can be found [here](https://rmca.company)
+  - Companion cellphone app can be found [here](https://rmca.company/)
 - Control over 6 individual model rockets
   - The launchpad array plugs into the main box via 9 pin connector
   - Relay board can send power to each launch pad to selectively launch individual rockets
