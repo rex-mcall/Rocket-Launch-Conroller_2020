@@ -4,8 +4,8 @@
 *  CEO McAllister Aerospace, Inc.
 */
 
-#include "prototypes.h"
-#include "global.h"
+#include "functions/prototypes.h"
+#include "variables/global.h"
 #include <Arduino.h>
 
 void setup()

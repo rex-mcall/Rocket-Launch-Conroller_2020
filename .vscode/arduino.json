@@ -1,5 +1,5 @@
 {
     "board": "arduino:avr:mega",
     "configuration": "cpu=atmega2560",
-    "sketch": "rocketLauncherBluetooth.ino"
+    "sketch": "src\\main\\rocketLauncherBluetooth.ino"
 }
