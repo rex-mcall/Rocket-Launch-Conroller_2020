@@ -1,5 +1,5 @@
+#include "global.h"
 //FUNCTIONS
-
 void DEBOUNCE()
 {
   delay(50); //halts the program for 50ms
