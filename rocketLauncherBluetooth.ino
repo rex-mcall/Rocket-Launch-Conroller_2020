@@ -4,7 +4,7 @@
 *  CEO McAllister Aerospace, Inc.
 */
 
-#include "C:\Users\Rex\Documents\Arduino\rocketLauncherBluetooth\prototypes.h"
+#include "prototypes.h"
 #include <Arduino.h>
 
 //VARIABLES
