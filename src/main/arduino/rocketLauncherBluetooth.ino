@@ -54,6 +54,12 @@ void loop()
 
   else
   {
+    /*
+    We have to do a Serial1.read to acknowledge that the bluetooth
+    device has bytes available so they don't linger until the mode is changed
+    back from manual to bluetooth
+    */
+    if (Serial1.available())  {int inByte = Serial1.read(); }
     shouldFire = digitalRead(FIRE_PIN);
     isArmed = digitalRead(ARM_PIN);
     if (isArmed == 0)
