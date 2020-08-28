@@ -28,11 +28,12 @@ void beep();
  */
 void fireSingle(int rocketNum);
 
-/**
+/**!
  * Fires a single rocket
  * PARAM: int of rocket number to fire
+ * PARAM: int of num millis to delay netween on and off of relay
  */
-void fireSingleBT(int rocketNum);
+void fireSingleBT(int rocketNum, int del);
 
 /**
  * Fires rockets from pad 0 to input number, inclusive

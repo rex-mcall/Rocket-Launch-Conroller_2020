@@ -39,16 +39,27 @@ void loop()
 
   if (! bluetoothOrManual)
   {
-
+Serial.
     if (Serial1.available())
     {
+      /*
+      Delay codes: 
+      0 - 500ms
+      1 - 750ms
+      2 - 1000ms
+      3 - 1250ms
+      4 - 1500ms
+      */
       int inByte = Serial1.read();
-      Serial.print(inByte);
-      Serial.write("\n");
-      Serial1.print("Firing relay ");
-      Serial1.print(inByte);
-      fireSingleBT(inByte);
-      Serial1.write("Done");
+      if (currDelayCode == -1) {
+        currDelayCode = 0;
+        currDelay = DELAY_ARRAY[inByte];
+      }
+      else {
+        fireSingleBT(inByte, currDelay);
+        currDelayCode = -1;
+      }
+
     }
   }
 

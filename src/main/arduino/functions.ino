@@ -7,8 +7,8 @@ void DEBOUNCE()
 
 void displayNum(int num)
 { //binary coded decimal values for each number on the 7 segment display
-  digitalWrite(BIT_ONE, ((num &       0x1) == 0x1) ? HIGH : LOW);
-  digitalWrite(BIT_TWO, ((num >>  1 & 0x1) == 0x1) ? HIGH : LOW);
+  digitalWrite(BIT_ONE,  ((num &      0x1) == 0x1) ? HIGH : LOW);
+  digitalWrite(BIT_TWO,  ((num >> 1 & 0x1) == 0x1) ? HIGH : LOW);
   digitalWrite(BIT_FOUR, ((num >> 2 & 0x1) == 0x1) ? HIGH : LOW);
 }
 
@@ -45,10 +45,10 @@ void beep()
   hasBeeped = true;
 }
 
-void fireSingleBT(int rocketNum)
+void fireSingleBT(int rocketNum, int del)
 {
   digitalWrite(RELAYS[rocketNum], LOW);
-  delay(750);
+  delay(del);
   digitalWrite(RELAYS[rocketNum], HIGH);
 }
 

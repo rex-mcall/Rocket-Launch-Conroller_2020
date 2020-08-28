@@ -3,5 +3,5 @@
     "configuration": "cpu=atmega2560",
     "sketch": "src\\main\\arduino\\rocketLauncherBluetooth.ino",
     "port": "COM6",
-    "programmer": "AVRISP mkII"
+    "programmer": "AVR ISP"
 }

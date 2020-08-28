@@ -26,4 +26,9 @@ int isArmed = 0;
 int shouldFire = 0;
 int potVal = 0;
 int bluetoothOrManual = 0;
+
+const int DELAY_ARRAY[5] = {500, 750, 1000, 1500, 2000};
+int currDelayCode = -1; //array index to determine the delay between relay on and off, from BT inByte
+int currDelay = -1; 
+
 #endif
